@@ -1,0 +1,24 @@
+body{
+    width:100vw!important;
+    height:100%;
+    color:#212529;
+    background-color:#F8F4E9;
+    overflow-x: hidden!important;
+}
+
+
+
+
+/**ANIMACIONES**/
+.scroll-animation{
+    animation:scroll 23s linear infinite;
+}
+
+@keyframes scroll {
+    0%{
+        transform:translateX(5%);
+    }
+    100%{
+        transform:translateX(-25%);
+    }
+}

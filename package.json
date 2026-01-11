@@ -35,6 +35,7 @@
   },
   "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
   "devDependencies": {
+    "@parcel/transformer-postcss": "^2.16.3",
     "@parcel/transformer-sass": "^2.15.3",
     "@tailwindcss/postcss": "^4.1.18",
     "autoprefixer": "^10.4.20",
