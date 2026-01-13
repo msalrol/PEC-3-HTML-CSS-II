@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cooking Contest 2024</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="p-6 md:p-12 font-sans text-black">
+
+    <!-- NAV -->
+    <nav class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-16">
+      <h1 class="text-xl md:text-xl font-semibold">
+        Cooking contest 2024 edition
+      </h1>
+
+      <ul class="flex flex-wrap gap-6 md:gap-8">
+        <li><a href="#" class="hover:opacity-70">Home</a></li>
+        <li><a href="#" class="hover:opacity-70">The contest</a></li>
+        <li><a href="#" class="hover:opacity-70">Recipes</a></li>
+        <li>
+          <a href="#" class="bg-black text-white px-4 py-2 rounded-md">
+            Contestants
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <include src="./views/hero.html"></include>
+
+    <!-- HEADER IMAGE -->
+    <section class="mb-24 md:mb-32">
+      <img
+        src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f"
+        alt="Cooking"
+        class="w-full h-[50vh] md:h-[65vh] lg:h-[80vh] object-cover rounded-2xl"
+      />
+    </section>
+
+    <!-- RECIPES -->
+    <section class="mb-24 md:mb-32">
+      <div class="mb-12">
+        <h3 class="text-2xl md:text-3xl font-semibold mb-2">
+          The recipes
+        </h3>
+        <p class="text-sm opacity-60">
+          These are the recipes of the best contestants
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Card -->
+        <article class="p-8 rounded-2xl shadow-md">
+          <h4 class="text-xl font-semibold mb-8">
+            Mediterranean Fusion
+          </h4>
+
+          <div class="flex items-start gap-4 pt-4">
+            <div class="w-14 h-14 rounded-full overflow-hidden shrink-0">
+              <img
+                src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39"
+                alt="Laura Gómez"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <p class="font-semibold mb-2">Laura Gómez</p>
+              <p class="text-sm opacity-60 leading-relaxed">
+                A fresh reinterpretation of classic Mediterranean flavors with a contemporary twist.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card -->
+        <article class="p-8 rounded-2xl shadow-md">
+          <h4 class="text-xl font-semibold mb-8">
+            Asian Street Style
+          </h4>
+
+          <div class="flex items-start gap-4 pt-4">
+            <div class="w-14 h-14 rounded-full overflow-hidden shrink-0">
+              <img
+                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
+                alt="Kenji Tanaka"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <p class="font-semibold mb-2">Kenji Tanaka</p>
+              <p class="text-sm opacity-60 leading-relaxed">
+                Bold spices and textures inspired by the energy of Asian street food.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card -->
+        <article class="p-8 rounded-2xl shadow-md">
+          <h4 class="text-xl font-semibold mb-8">
+            Modern Comfort
+          </h4>
+
+          <div class="flex items-start gap-4 pt-4">
+            <div class="w-14 h-14 rounded-full overflow-hidden shrink-0">
+              <img
+                src="https://images.unsplash.com/photo-1527980965255-d3b416303d12"
+                alt="Marco Rossi"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <p class="font-semibold mb-2">Marco Rossi</p>
+              <p class="text-sm opacity-60 leading-relaxed">
+                Comfort food elevated through modern culinary techniques.
+              </p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="pt-16 pb-16 border-t border-black/10">
+      <div class="flex flex-col lg:flex-row gap-16">
+
+        <!-- Left -->
+        <div class="lg:w-1/2 flex flex-col gap-8">
+          <h4 class="text-xl font-semibold">
+            Cooking contest 2024 edition
+          </h4>
+
+          <div class="flex gap-6">
+            <!-- icons (igual que los tuyos, sin cambios) -->
+            <!-- Facebook -->
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">...</svg>
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">...</svg>
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">...</svg>
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">...</svg>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="lg:w-1/2 grid grid-cols-1 sm:grid-cols-3 gap-12 text-sm">
+          <div class="space-y-6">
+            <p class="font-medium">Recipes</p>
+            <ul class="space-y-6 opacity-70">
+              <li>Mediterranean Fusion</li>
+              <li>Asian Street Style</li>
+              <li>Modern Comfort</li>
+            </ul>
+          </div>
+
+          <div class="space-y-6">
+            <p class="font-medium">Contestants</p>
+            <ul class="space-y-6 opacity-70">
+              <li>Laura Gómez</li>
+              <li>Kenji Tanaka</li>
+              <li>Marco Rossi</li>
+            </ul>
+          </div>
+
+          <div class="space-y-6">
+            <p class="font-medium">Contest editions</p>
+            <ul class="space-y-6 opacity-70">
+              <li>2022</li>
+              <li>2023</li>
+              <li>2024</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </body>
+</html>

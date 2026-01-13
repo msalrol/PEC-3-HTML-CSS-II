@@ -1,0 +1,16 @@
+@use "sass:color";
+
+// col. primarios
+$primary-color: #F8F4E9;
+$secondary-color: #404040;
+
+@theme {
+  --color-primary: #{$primary-color};
+  --color-secondary: #{$secondary-color};
+  --font-sans: "PPMori-SemiBold", BlinkMacSystemFont, "Segoe UI",
+               Roboto, "Helvetica Neue", Arial, sans-serif,
+               "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  --font-regular: "PPMori-Regular", sans-serif;
+  --font-light: "PPMori-Extralight", sans-serif;
+}

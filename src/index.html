@@ -8,50 +8,41 @@
     <!-- do not remove this line! -->
     <title>UOC Boilerplate</title>
   </head>
-  <body class="text-white bg-primary overflow-x-hidden w-100">
+  <body
+    class="base"
+  >
+    <nav>
+      <include src="./views/header.html"></include>
+    </nav>
     <div
-      class="flex gap-7 whitespace-nowrap w-full overflow-x-hidden py-5 scroll-animation"
+      class="w-full z-50 h-screen grid grid-cols-1 grid-rows-[20%_20%_40%_20%] lg:grid-cols-[45% 45% 1fr] lg:grid-rows-2"
     >
-      <div class="">&nbsp;OLÉ&nbsp;&nbsp;</div>
-      <div class="">&nbsp;オレ&nbsp;&nbsp;</div>
-      <div class="">&nbsp;奥莱&nbsp;&nbsp;</div>
-      <div class="">&nbsp;oʊ.le&nbsp;&nbsp;</div>
-      <div class="">&nbsp;OLÉ&nbsp;&nbsp;</div>
-      <div class="">&nbsp;オレ&nbsp;&nbsp;</div>
-      <div class="">&nbsp;奥莱&nbsp;&nbsp;</div>
-      <div class="">&nbsp;oʊ.le&nbsp;&nbsp;</div>
-      <div class="">&nbsp;OLÉ&nbsp;&nbsp;</div>
-      <div class="">&nbsp;オレ&nbsp;&nbsp;</div>
-      <div class="">&nbsp;奥莱&nbsp;&nbsp;</div>
-      <div class="">&nbsp;oʊ.le&nbsp;&nbsp;</div>
-      <div class="">&nbsp;OLÉ&nbsp;&nbsp;</div>
-      <div class="">&nbsp;オレ&nbsp;&nbsp;</div>
-      <div class="">&nbsp;奥莱&nbsp;&nbsp;</div>
-      <div class="">&nbsp;oʊ.le&nbsp;&nbsp;</div>
-      <div class="">&nbsp;OLÉ&nbsp;&nbsp;</div>
-      <div class="">&nbsp;オレ&nbsp;&nbsp;</div>
-      <div class="">&nbsp;奥莱&nbsp;&nbsp;</div>
-      <div class="">&nbsp;oʊ.le&nbsp;&nbsp;</div>
-      <div class="">&nbsp;OLÉ&nbsp;&nbsp;</div>
-      <div class="">&nbsp;オレ&nbsp;&nbsp;</div>
-      <div class="">&nbsp;奥莱&nbsp;&nbsp;</div>
-      <div class="">&nbsp;oʊ.le&nbsp;&nbsp;</div>
-      <div class="">&nbsp;OLÉ&nbsp;&nbsp;</div>
-      <div class="">&nbsp;オレ&nbsp;&nbsp;</div>
-      <div class="">&nbsp;奥莱&nbsp;&nbsp;</div>
-      <div class="">&nbsp;oʊ.le&nbsp;&nbsp;</div>
-      <div class="">&nbsp;OLÉ&nbsp;&nbsp;</div>
-      <div class="">&nbsp;オレ&nbsp;&nbsp;</div>
-      <div class="">&nbsp;奥莱&nbsp;&nbsp;</div>
-      <div class="">&nbsp;oʊ.le&nbsp;&nbsp;</div>
-      <div class="">&nbsp;OLÉ&nbsp;&nbsp;</div>
-      <div class="">&nbsp;オレ&nbsp;&nbsp;</div>
-      <div class="">&nbsp;奥莱&nbsp;&nbsp;</div>
-      <div class="">&nbsp;oʊ.le&nbsp;&nbsp;</div>
-      <div class="">&nbsp;OLÉ&nbsp;&nbsp;</div>
-      <div class="">&nbsp;オレ&nbsp;&nbsp;</div>
-      <div class="">&nbsp;奥莱&nbsp;&nbsp;</div>
-      <div class="">&nbsp;oʊ.le&nbsp;&nbsp;</div>
+      <div
+        class="flex items-end col-span-full row-start-1 row-end-2 lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-2"
+      >
+        <include src="./views/scrolling-text.html">
+      </div>
+      <div
+        class="p-6 text-2xl md:text-4xl lg:text-4xl font-primary flex items-end col-span-full row-start-4 row-end-[-1] lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-[-1]"
+      >
+        <h1>JORNADAS DE COCINA TRADICIONAL ESPAÑOLA E INTERNACIONAL</h1>
+      </div>
+      <div
+        class="w-full z-50 flex md:flex-row justify-center items-end col-span-full row-start-3 row-end-4 lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-[-1]"
+      >
+        <img
+          class="w-160 lg:-translate-x-15"
+          src="./assets/images/paella-comidas-tradicionales.png"
+          alt="Portada arroz al horno"
+        />
+      </div>
+      <div
+        class="p-6 translate-y-12 lg:translate-y-0 justify-end w-full flex flex-col lg:items-end gap-6 col-span-full row-start-2 row-end-3 lg:col-start-3 lg:col-end-[-1] lg:row-start-2 lg:row-end-[-1]"
+      >
+        <div><span class="font-regular text-5xl md:text-7xl">29</span></div>
+        <div><span class="font-regular text-5xl md:text-7xl">05</span></div>
+        <div><span class="font-regular text-5xl md:text-7xl">25</span></div>
+      </div>
     </div>
     <include src="./views/footer.html"></include>
   </body>

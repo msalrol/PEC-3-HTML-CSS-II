@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+  </head>
+  <body class="base">
+    <nav>
+      <include src="./views/header-interna.html"></include>
+    </nav>
+    <div class="pt-[3rem] md:pt-[8rem]">
+      <include src="./views/scrolling-text.html"></include>
+    </div>
+    <div class="flex p-4 lg:p-8 items-start">
+      <div class="flex-grow-0 flex-shrink-0 basis-2/3">
+        <h1 class="text-3xl lg:text-4xl lg:pb-8">PONENTES DE LAS JORNADAS</h1>
+        <div class="flex flex-row flex-wrap">
+          <div
+            class="flex-grow-0 flex-shrink-0 basis-1/3 relative pt-8 flex flex-col gap-4 lg:w-60 p-2"
+          >
+            <div class="tag">Mexicana</div>
+
+            <div
+              class="shadow-[-12px_18px_25px_-4px_#0000004d] w-55 rounded-full"
+            >
+              <img
+                class="img-rounded scale-[1.04]"
+                src="./assets/images/avatares/avatar-4-comida-tradicional.png"
+                alt="Avatar de ponente 1"
+              />
+            </div>
+
+            <include
+              src="./views/nombre-descripcion.html"
+              locals='{
+      "name": "Diego Ramírez",
+      "description": "Cocina mexicana callejera, tacos y salsas picantes."
+    }'
+            ></include>
+          </div>
+          <div
+            class="flex-grow-0 flex-shrink-0 basis-1/3 relative pt-8 flex flex-col gap-4 lg:w-60 p-2"
+          >
+            <div class="tag">Japonesa</div>
+
+            <div
+              class="shadow-[-12px_18px_25px_-4px_#0000004d] w-55 rounded-full"
+            >
+              <img
+                class="img-rounded scale-[1.04]"
+                src="./assets/images/avatares/avatar-7-comida-tradicional.png"
+                alt="Avatar de ponente 1"
+              />
+            </div>
+
+            <include
+              src="./views/nombre-descripcion.html"
+              locals='{
+      "name": "Kenji Nakamura",
+      "description": "Cocina japonesa minimalista, sushi y platos de temporada."
+    }'
+            ></include>
+          </div>
+          <div
+            class="flex-grow-0 flex-shrink-0 basis-1/3 relative pt-8 flex flex-col gap-4 lg:w-60 p-2"
+          >
+            <div class="tag">Marroquí</div>
+
+            <div
+              class="shadow-[-12px_18px_25px_-4px_#0000004d] w-55 rounded-full"
+            >
+              <img
+                class="img-rounded scale-[1.04]"
+                src="./assets/images/avatares/avatar-3-comida-tradicional.png"
+                alt="Avatar de ponente 1"
+              />
+            </div>
+
+            <include
+              src="./views/nombre-descripcion.html"
+              locals='{
+      "name": "Omar Haddad",
+      "description": "Cocina marroquí, especialidad en mezzes y panes artesanales."
+    }'
+            ></include>
+          </div>
+          <div
+            class="flex-grow-0 flex-shrink-0 basis-1/3 relative pt-8 flex flex-col gap-4 lg:w-60 p-2"
+          >
+            <div class="tag">Árabe</div>
+
+            <div
+              class="shadow-[-12px_18px_25px_-4px_#0000004d] w-55 rounded-full"
+            >
+              <img
+                class="img-rounded scale-[1.04]"
+                src="./assets/images/avatares/avatar-1-comida-tradicional.png"
+                alt="Avatar de ponente 1"
+              />
+            </div>
+
+            <include
+              src="./views/nombre-descripcion.html"
+              locals='{
+      "name": "Sara Al-Mansouri",
+      "description": "Cocina tradicional del Golfo con énfasis en especias y arroces."
+    }'
+            ></include>
+          </div>
+          <div
+            class="flex-grow-0 flex-shrink-0 basis-1/3 relative pt-8 flex flex-col gap-4 lg:w-60 p-2"
+          >
+            <div class="tag">Española</div>
+
+            <div
+              class="shadow-[-12px_18px_25px_-4px_#0000004d] w-55 rounded-full"
+            >
+              <img
+                class="img-rounded scale-[1.04]"
+                src="./assets/images/avatares/avatar-5-comida-tradicional.png"
+                alt="Avatar de ponente 1"
+              />
+            </div>
+
+            <include
+              src="./views/nombre-descripcion.html"
+              locals='{
+      "name": "Pedro de León",
+      "description": "Cocina tradicional española con toques fusión."
+    }'
+            ></include>
+          </div>
+          <div
+            class="flex-grow-0 flex-shrink-0 basis-1/3 relative pt-8 flex flex-col gap-4 lg:w-60 p-2"
+          >
+            <div class="tag">Árabe</div>
+
+            <div
+              class="shadow-[-12px_18px_25px_-4px_#0000004d] w-55 rounded-full"
+            >
+              <img
+                class="img-rounded scale-[1.04]"
+                src="./assets/images/avatares/avatar-6-comida-tradicional.png"
+                alt="Avatar de ponente 1"
+              />
+            </div>
+
+            <include
+              src="./views/nombre-descripcion.html"
+              locals='{
+      "name": "Hassan Benali",
+      "description": "Cocina oriental árabe con platos libaneses y palestinos."
+    }'
+            ></include>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-end">
+        <img
+          class="w-[35rem] max-w-none animate-spin [animation-duration:19s] -translate-x-12 lg:translate-x-15"
+          src="./assets/images/plato-ramen-comida-tradicional.png"
+          alt="Plato de ramen"
+        />
+        <img
+          class="w-[35rem] max-w-none animate-spin [animation-duration:19s] -translate-x-12 lg:translate-x-15 lg:hidden md:hidden"
+          src="./assets/images/vhichisoia-comidas-tradicionales.png"
+          alt="Plato de vichisoia"
+        />
+        <img
+          class="w-[35rem] max-w-none animate-spin [animation-duration:19s] -translate-x-12 lg:translate-x-15 lg:hidden md:hidden"
+          src="./assets/images/pasta-platos-tradicionales.png"
+          alt="Plato de pasta"
+        />
+      </div>
+    </div>
+
+    <include src="./views/footer.html"></include>
+  </body>
+</html>
